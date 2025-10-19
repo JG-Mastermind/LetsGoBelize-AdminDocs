@@ -1,0 +1,2107 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive admin onboarding manual for LetsGoBelize platform operations">
+      
+      
+      
+        <link rel="canonical" href="https://jg-mastermind.github.io/LetsGoBelize-AdminDocs/06-Safety-Alerts-Runbook/">
+      
+      
+        <link rel="prev" href="../05-Payments-%26-Stripe-Connect/">
+      
+      
+        <link rel="next" href="../07-WhatsApp-Operations/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>06. Safety Alerts Runbook - LetsGoBelize Admin Onboarding Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-06-safety-alerts-runbook" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LetsGoBelize Admin Onboarding Manual" class="md-header__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LetsGoBelize Admin Onboarding Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              06. Safety Alerts Runbook
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LetsGoBelize Admin Onboarding Manual" class="md-nav__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LetsGoBelize Admin Onboarding Manual
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-Admin-ReadMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Roles-Permissions-RLS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01. Roles, Permissions & RLS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Onboarding-Admins-Invitations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02. Onboarding Admins & Invitations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Tours-Management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03. Tours Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Bookings-Flow-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04. Bookings Flow & Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Payments-%26-Stripe-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05. Payments & Stripe Connect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    06. Safety Alerts Runbook
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    06. Safety Alerts Runbook
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 PURPOSE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ WHEN TO USE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#severity-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 SEVERITY LEVELS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-send-safety-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ STEP-BY-STEP: Send Safety Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ STEP-BY-STEP: Send Safety Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-assess-situation-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Assess Situation (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Assess Situation (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-verify-threat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Verify Threat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-identify-affected-travelers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Identify Affected Travelers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-draft-alert-message-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Draft Alert Message (10 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: Draft Alert Message (10 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-template-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Template Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-hurricane-warning-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Hurricane Warning (Critical)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-road-closure-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Road Closure (Warning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-missing-traveler-emergency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Missing Traveler (Emergency)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-send-alert-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Send Alert (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: Send Alert (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-ui-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard UI Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-monitor-update-ongoing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Monitor &amp; Update (Ongoing)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Monitor &amp; Update (Ongoing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track Delivery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Send Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-resolve-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 5: Resolve Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Resolve Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-danger-passes" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Danger Passes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whatsapp-broadcast-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 WhatsApp Broadcast Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rollbackexpire-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Rollback/Expire Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Rollback/Expire Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Rollback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rollback-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rollback Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ DO / DO NOT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ DO / DO NOT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ VERIFICATION CHECKLIST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 ESCALATION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-incident-report-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Post-Incident Report Template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Knowledge Check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-WhatsApp-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    07. WhatsApp Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-AI-Assistant-Governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    08. AI Assistant Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Storage_-Images-%26-Files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    09. Storage, Images & Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Analytics-%26-Insights-Dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Analytics & Insights Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Security-%26-Compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Security & Compliance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-Backups-%26-Disaster-Recovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Backups & Disaster Recovery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-Release-%26-Change-Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. Release & Change Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-Troubleshooting-Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14. Troubleshooting Playbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-Checklists-and-Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15. Checklists and Templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-B-Glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 PURPOSE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ WHEN TO USE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#severity-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 SEVERITY LEVELS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-send-safety-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ STEP-BY-STEP: Send Safety Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ STEP-BY-STEP: Send Safety Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-assess-situation-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Assess Situation (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 1: Assess Situation (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-verify-threat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Verify Threat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-identify-affected-travelers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Identify Affected Travelers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-draft-alert-message-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Draft Alert Message (10 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 2: Draft Alert Message (10 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-template-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Message Template Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-hurricane-warning-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Hurricane Warning (Critical)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-road-closure-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Road Closure (Warning)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-missing-traveler-emergency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Missing Traveler (Emergency)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-send-alert-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Send Alert (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 3: Send Alert (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-ui-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard UI Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-4-monitor-update-ongoing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 4: Monitor &amp; Update (Ongoing)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 4: Monitor &amp; Update (Ongoing)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-delivery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track Delivery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Send Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-5-resolve-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 5: Resolve Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phase 5: Resolve Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-danger-passes" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Danger Passes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whatsapp-broadcast-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 WhatsApp Broadcast Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rollbackexpire-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Rollback/Expire Alert
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Rollback/Expire Alert">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Rollback
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rollback-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rollback Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ DO / DO NOT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ DO / DO NOT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ VERIFICATION CHECKLIST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 ESCALATION
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-incident-report-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Post-Incident Report Template
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Knowledge Check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="module-06-safety-alerts-runbook">Module 06: Safety Alerts Runbook<a class="headerlink" href="#module-06-safety-alerts-runbook" title="Permanent link">&para;</a></h1>
+<p><strong>Module Duration:</strong> 90 minutes | <strong>Difficulty:</strong> Advanced
+<strong>Prerequisites:</strong> Module 01 completed, admin or super_admin role REQUIRED</p>
+<hr />
+<h2 id="purpose">🎯 <strong>PURPOSE</strong><a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
+<p>Safety alerts can save lives. This module teaches you how to:
+- Quickly broadcast emergency alerts to travelers
+- Target alerts by location, tour type, or specific groups
+- Handle weather emergencies, security threats, and medical situations
+- Roll back or expire alerts when danger passes
+- Document incidents for post-mortem analysis</p>
+<p>⚠️ <strong>CRITICAL:</strong> Safety alerts are high-stakes. Read this module completely before sending your first alert.</p>
+<hr />
+<h2 id="when-to-use">⏰ <strong>WHEN TO USE</strong><a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<p>Send safety alerts for:
+- <strong>Weather:</strong> Hurricane warnings, tropical storms, flash flood alerts
+- <strong>Security:</strong> Civil unrest, crime spikes, travel advisories
+- <strong>Health:</strong> Disease outbreaks, water quality issues, food safety warnings
+- <strong>Infrastructure:</strong> Road closures, power outages, communication disruptions
+- <strong>Missing Person:</strong> Traveler overdue from tour, lost hiker
+- <strong>Wildlife:</strong> Dangerous animal sightings, beach closures due to jellyfish</p>
+<p>⚠️ <strong>DO NOT use for:</strong> Marketing messages, general announcements, tour promotions (use email campaigns instead).</p>
+<hr />
+<h2 id="severity-levels">📊 <strong>SEVERITY LEVELS</strong><a class="headerlink" href="#severity-levels" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Color</strong></th>
+<th><strong>Icon</strong></th>
+<th><strong>Use Case</strong></th>
+<th><strong>Notification Method</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>info</code></td>
+<td>Blue</td>
+<td>ℹ️</td>
+<td>General advisories, minor disruptions</td>
+<td>Email only</td>
+</tr>
+<tr>
+<td><code>warning</code></td>
+<td>Yellow</td>
+<td>⚠️</td>
+<td>Developing situation, heightened caution</td>
+<td>Email + SMS</td>
+</tr>
+<tr>
+<td><code>critical</code></td>
+<td>Red</td>
+<td>🚨</td>
+<td>Immediate danger, life-threatening</td>
+<td>WhatsApp + SMS + Email + Push</td>
+</tr>
+<tr>
+<td><code>emergency</code></td>
+<td>Purple</td>
+<td>⚡</td>
+<td>Active crisis, evacuation orders</td>
+<td>All channels + Phone calls</td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Tip:</strong> When uncertain about severity, choose higher level. Over-alerting is better than under-alerting.</p>
+<hr />
+<h2 id="step-by-step-send-safety-alert">🛠️ <strong>STEP-BY-STEP: Send Safety Alert</strong><a class="headerlink" href="#step-by-step-send-safety-alert" title="Permanent link">&para;</a></h2>
+<h3 id="phase-1-assess-situation-5-minutes"><strong>Phase 1: Assess Situation (5 minutes)</strong><a class="headerlink" href="#phase-1-assess-situation-5-minutes" title="Permanent link">&para;</a></h3>
+<h4 id="step-1-verify-threat"><strong>Step 1: Verify Threat</strong><a class="headerlink" href="#step-1-verify-threat" title="Permanent link">&para;</a></h4>
+<p>Before sending alert, confirm threat is real:</p>
+<p><strong>Reliable Sources:</strong>
+- [ ] National Emergency Management Organization (NEMO) Belize
+- [ ] U.S. Embassy Belize alerts
+- [ ] Belize Meteorological Service
+- [ ] Local police/fire departments
+- [ ] Verified news outlets (Channel 5 Belize, Breaking Belize News)</p>
+<p>⚠️ <strong>DO NOT use:</strong> Social media rumors, unverified WhatsApp forwards, tourist panic.</p>
+<p><strong>Verification Checklist:</strong>
+- [ ] Threat confirmed by 2+ official sources
+- [ ] Geographic scope identified (which areas affected)
+- [ ] Timeline established (when threat begins/ends)
+- [ ] Severity assessed (info/warning/critical/emergency)</p>
+<hr />
+<h4 id="step-2-identify-affected-travelers"><strong>Step 2: Identify Affected Travelers</strong><a class="headerlink" href="#step-2-identify-affected-travelers" title="Permanent link">&para;</a></h4>
+<p>Determine who needs alert:</p>
+<p><strong>By Location:</strong>
+- All travelers in Ambergris Caye
+- All travelers in San Ignacio area
+- All travelers currently on tours
+- All travelers arriving in next 48 hours</p>
+<p><strong>By Tour Type:</strong>
+- All water-based tours (for marine warnings)
+- All jungle tours (for wildlife alerts)
+- All cave tours (for weather-related closures)</p>
+<p><strong>By Severity:</strong>
+- Critical/Emergency: Alert everyone in affected area
+- Warning: Alert travelers with tours in next 72 hours
+- Info: Alert travelers with tours in next week</p>
+<hr />
+<h3 id="phase-2-draft-alert-message-10-minutes"><strong>Phase 2: Draft Alert Message (10 minutes)</strong><a class="headerlink" href="#phase-2-draft-alert-message-10-minutes" title="Permanent link">&para;</a></h3>
+<h4 id="message-template-structure"><strong>Message Template Structure</strong><a class="headerlink" href="#message-template-structure" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>[SEVERITY EMOJI] [ALERT TYPE]: [BRIEF HEADLINE]
+
+SITUATION:
+[What is happening, 1-2 sentences]
+
+AFFECTED AREAS:
+[Specific locations]
+
+ACTIONS TO TAKE:
+- [Action 1]
+- [Action 2]
+- [Action 3]
+
+TIMELINE:
+[When alert is effective, when it expires]
+
+CONTACT:
+For questions: [emergency contact number]
+
+---
+LetsGoBelize.app Safety Team
+Sent: [timestamp]
+</code></pre></div>
+<hr />
+<h4 id="example-1-hurricane-warning-critical"><strong>Example 1: Hurricane Warning (Critical)</strong><a class="headerlink" href="#example-1-hurricane-warning-critical" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>🚨 CRITICAL ALERT: Hurricane Lisa Approaching Belize Coast
+
+SITUATION:
+Hurricane Lisa (Category 2) expected to make landfall near Belize City on November 2 at 6 AM. Wind speeds 110 mph, storm surge 8-12 feet. All coastal areas under hurricane warning.
+
+AFFECTED AREAS:
+- Belize City
+- Ambergris Caye
+- Caye Caulker
+- Placencia Peninsula
+- All offshore cayes
+
+ACTIONS TO TAKE:
+- Seek shelter in concrete buildings IMMEDIATELY
+- Stock 3 days of water, food, medications
+- Secure loose items, board windows
+- Stay indoors until all-clear issued
+- DO NOT attempt water travel
+
+TIMELINE:
+Effective: November 1, 2025 at 2:00 PM
+Expected to pass: November 3, 2025
+
+CONTACT:
+Emergency assistance: +501-EMERGENCY (24/7)
+
+---
+LetsGoBelize.app Safety Team
+Sent: Nov 1, 2025 2:03 PM BZT
+</code></pre></div>
+<hr />
+<h4 id="example-2-road-closure-warning"><strong>Example 2: Road Closure (Warning)</strong><a class="headerlink" href="#example-2-road-closure-warning" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>⚠️ WARNING: George Price Highway Closed Due to Accident
+
+SITUATION:
+Serious accident near Mile 47 has closed George Price Highway (Western Highway) in both directions. Traffic diverted to Hummingbird Highway.
+
+AFFECTED AREAS:
+- Travel between Belize City and San Ignacio
+- Tours departing from Belize City to western Belize
+
+ACTIONS TO TAKE:
+- Add 90 minutes to travel time if using alternate route
+- Contact your guide about pickup time adjustments
+- If traveling today, confirm route with guide before departing
+
+TIMELINE:
+Effective: October 8, 2025 at 10:00 AM
+Estimated reopening: 4:00 PM same day
+
+CONTACT:
+Route questions: hello@letsgobelize.app
+
+---
+LetsGoBelize.app Safety Team
+Sent: Oct 8, 2025 10:15 AM BZT
+</code></pre></div>
+<hr />
+<h4 id="example-3-missing-traveler-emergency"><strong>Example 3: Missing Traveler (Emergency)</strong><a class="headerlink" href="#example-3-missing-traveler-emergency" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>⚡ EMERGENCY: Missing Hiker - Maya Mountains
+
+SITUATION:
+Solo hiker (John Smith, 34, USA) overdue from Mountain Pine Ridge trail. Last contact: yesterday 3 PM. Search and rescue activated.
+
+AFFECTED AREAS:
+- Mountain Pine Ridge Forest Reserve
+- All San Ignacio area tours
+
+ACTIONS TO TAKE:
+- If you saw a solo male hiker yesterday afternoon in Mountain Pine Ridge, call immediately
+- All guides: Check your groups - report anyone separated from tour
+- Do NOT conduct independent search - let professionals handle
+
+DESCRIPTION:
+Male, 34, white, 5&#39;10&quot;, brown hair, wearing blue backpack, khaki pants, green Columbia jacket.
+
+TIMELINE:
+Effective: October 8, 2025 at 8:00 AM
+UPDATE: Will send hourly updates
+
+CONTACT:
+Sightings/information: +501-XXX-XXXX (Search Coordinator)
+Emergency: 911
+
+---
+LetsGoBelize.app Safety Team
+Sent: Oct 8, 2025 8:05 AM BZT
+</code></pre></div>
+<hr />
+<h3 id="phase-3-send-alert-5-minutes"><strong>Phase 3: Send Alert (5 minutes)</strong><a class="headerlink" href="#phase-3-send-alert-5-minutes" title="Permanent link">&para;</a></h3>
+<h4 id="dashboard-ui-method"><strong>Dashboard UI Method</strong><a class="headerlink" href="#dashboard-ui-method" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Admin Dashboard → <strong>"Safety Alerts"</strong> → <strong>"Create New Alert"</strong> button</p>
+</li>
+<li>
+<p>Fill alert form:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>Field</strong></th>
+<th><strong>Instructions</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alert Type</td>
+<td>Dropdown: Weather, Security, Health, Infrastructure, Missing Person, Wildlife</td>
+</tr>
+<tr>
+<td>Severity</td>
+<td>Radio buttons: Info, Warning, Critical, Emergency</td>
+</tr>
+<tr>
+<td>Headline</td>
+<td>5-10 words, urgent and specific</td>
+</tr>
+<tr>
+<td>Message Body</td>
+<td>Use template from Phase 2</td>
+</tr>
+<tr>
+<td>Affected Areas</td>
+<td>Multi-select: Ambergris Caye, San Ignacio, etc.</td>
+</tr>
+<tr>
+<td>Target Audience</td>
+<td>Checkboxes: Current travelers, Upcoming bookings, All users</td>
+</tr>
+<tr>
+<td>Expiration</td>
+<td>Date/time picker (when to auto-expire)</td>
+</tr>
+<tr>
+<td>Notification Channels</td>
+<td>Auto-selected based on severity</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Click <strong>"Preview Alert"</strong> → Review on mobile device simulator</p>
+</li>
+<li>
+<p>Verify:</p>
+</li>
+<li>[ ] No typos in message</li>
+<li>[ ] Emergency contact numbers correct</li>
+<li>[ ] Affected areas match situation</li>
+<li>[ ] Expiration time appropriate</li>
+<li>
+<p>[ ] Notification channels correct for severity</p>
+</li>
+<li>
+<p>Click <strong>"Send Alert"</strong> → Confirm in modal: "This will notify [X] travelers immediately"</p>
+</li>
+<li>
+<p>System processes:</p>
+</li>
+<li>Inserts record in <code>safety_alerts</code> table</li>
+<li>Queues notifications (WhatsApp, SMS, Email, Push)</li>
+<li>Sends to affected users within 1-2 minutes</li>
+<li>Creates audit log entry</li>
+</ol>
+<p>✅ <strong>Success:</strong> Alert displays on traveler dashboards, notifications sent, status shows "active"</p>
+<hr />
+<h3 id="phase-4-monitor-update-ongoing"><strong>Phase 4: Monitor &amp; Update (Ongoing)</strong><a class="headerlink" href="#phase-4-monitor-update-ongoing" title="Permanent link">&para;</a></h3>
+<h4 id="track-delivery"><strong>Track Delivery</strong><a class="headerlink" href="#track-delivery" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Dashboard → <strong>"Safety Alerts"</strong> → Click alert ID → <strong>"Delivery Status"</strong> tab</li>
+</ol>
+<p>Monitor metrics:
+- <strong>WhatsApp:</strong> Delivered (✓✓), Read (✓✓ blue)
+- <strong>SMS:</strong> Delivered, Failed (investigate)
+- <strong>Email:</strong> Opened rate, click rate
+- <strong>Push:</strong> Delivery rate</p>
+<p>💡 <strong>Red Flags:</strong>
+- &lt; 80% delivery rate after 5 minutes → Check notification service
+- High bounce rate (email/SMS) → Contact data issues
+- No opens after 15 minutes → Follow up with phone calls (emergency only)</p>
+<hr />
+<h4 id="send-updates"><strong>Send Updates</strong><a class="headerlink" href="#send-updates" title="Permanent link">&para;</a></h4>
+<p>For ongoing situations (hurricanes, missing persons), send updates every 2-4 hours:</p>
+<ol>
+<li>Click original alert → <strong>"Send Update"</strong> button</li>
+<li>
+<p>Message format:
+   <div class="highlight"><pre><span></span><code>UPDATE [#2]: [Original Headline]
+
+[New developments, 2-3 sentences]
+
+CURRENT STATUS: [Description]
+
+NEXT UPDATE: [When you&#39;ll send next update]
+</code></pre></div></p>
+</li>
+<li>
+<p>Updates are grouped under original alert (threaded conversation)</p>
+</li>
+</ol>
+<hr />
+<h3 id="phase-5-resolve-alert"><strong>Phase 5: Resolve Alert</strong><a class="headerlink" href="#phase-5-resolve-alert" title="Permanent link">&para;</a></h3>
+<h4 id="when-danger-passes"><strong>When Danger Passes</strong><a class="headerlink" href="#when-danger-passes" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Dashboard → <strong>"Safety Alerts"</strong> → Find alert → <strong>"Mark as Resolved"</strong></p>
+</li>
+<li>
+<p>Send final "All Clear" message:
+   <div class="highlight"><pre><span></span><code>✅ RESOLVED: [Original Headline]
+
+The [threat type] affecting [area] has passed. It is now safe to [action].
+
+CURRENT STATUS: Normal operations resumed
+
+GUIDANCE:
+- [Any post-incident instructions]
+- [Damage assessment updates]
+
+Thank you for your patience and cooperation.
+
+---
+LetsGoBelize.app Safety Team
+Sent: [timestamp]
+</code></pre></div></p>
+</li>
+<li>
+<p>System updates:</p>
+</li>
+<li>Alert status → "resolved"</li>
+<li>Removes alert from active dashboard displays</li>
+<li>Archives in alert history</li>
+<li>Logs resolution time in audit</li>
+</ol>
+<hr />
+<h2 id="whatsapp-broadcast-checklist">📋 <strong>WhatsApp Broadcast Checklist</strong><a class="headerlink" href="#whatsapp-broadcast-checklist" title="Permanent link">&para;</a></h2>
+<p>For critical/emergency alerts, send via WhatsApp:</p>
+<ul>
+<li>[ ] Verify WhatsApp Business API credentials active</li>
+<li>[ ] Message template pre-approved by WhatsApp (24-hour requirement)</li>
+<li>[ ] Recipient list accurate (no test accounts in production list)</li>
+<li>[ ] Message &lt; 1024 characters (WhatsApp limit)</li>
+<li>[ ] No prohibited content (violence, graphic images)</li>
+<li>[ ] Include opt-out instructions (legal requirement)</li>
+<li>[ ] Set appropriate send rate (max 100 messages/second to avoid throttling)</li>
+</ul>
+<p>⚠️ <strong>WhatsApp Policy:</strong> Emergency alerts allowed without template pre-approval for life-threatening situations only.</p>
+<hr />
+<h2 id="rollbackexpire-alert">🔄 <strong>Rollback/Expire Alert</strong><a class="headerlink" href="#rollbackexpire-alert" title="Permanent link">&para;</a></h2>
+<h3 id="when-to-rollback"><strong>When to Rollback</strong><a class="headerlink" href="#when-to-rollback" title="Permanent link">&para;</a></h3>
+<p>Retract alert if:
+- Alert sent in error (wrong area, wrong severity)
+- Situation resolved faster than expected
+- Better information reveals threat was overstated
+- Technical error duplicated alert</p>
+<h3 id="rollback-procedure"><strong>Rollback Procedure</strong><a class="headerlink" href="#rollback-procedure" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Dashboard → <strong>"Safety Alerts"</strong> → Alert → <strong>"⋮ More"</strong> → <strong>"Rollback Alert"</strong></p>
+</li>
+<li>
+<p>Confirm reason:</p>
+</li>
+<li>"Sent in error"</li>
+<li>"Situation resolved"</li>
+<li>"Information corrected"</li>
+<li>
+<p>"Duplicate alert"</p>
+</li>
+<li>
+<p>System immediately:</p>
+</li>
+<li>Sends retraction message: "ALERT RETRACTED: [Headline] - Reason: [...]"</li>
+<li>Removes alert from active displays</li>
+<li>Marks status as "retracted"</li>
+<li>Logs rollback in audit (with admin name)</li>
+</ol>
+<p>⚠️ <strong>Caution:</strong> Rollbacks are logged and reviewed quarterly. Frequent rollbacks indicate poor verification process.</p>
+<hr />
+<h2 id="do-do-not">⚠️ <strong>DO / DO NOT</strong><a class="headerlink" href="#do-do-not" title="Permanent link">&para;</a></h2>
+<h3 id="do"><strong>DO:</strong><a class="headerlink" href="#do" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Verify threat with official sources</strong>
+- NEMO, U.S. Embassy, Belize Met Service
+- Never rely on social media alone</p>
+<p>✅ <strong>Send alerts early</strong>
+- Better to over-alert than under-alert
+- "When in doubt, send it out"</p>
+<p>✅ <strong>Use clear, actionable language</strong>
+- Tell travelers exactly what to do
+- Avoid jargon or technical terms</p>
+<p>✅ <strong>Include emergency contacts</strong>
+- Local emergency numbers
+- LetsGoBelize.app emergency hotline</p>
+<p>✅ <strong>Follow up with "all clear" messages</strong>
+- Don't leave travelers wondering if danger passed</p>
+<hr />
+<h3 id="do-not"><strong>DO NOT:</strong><a class="headerlink" href="#do-not" title="Permanent link">&para;</a></h3>
+<p>❌ <strong>Never send alerts based on rumors</strong>
+- Verify with 2+ official sources first
+- Unverified alerts cause panic and lose trust</p>
+<p>❌ <strong>Never use alerts for marketing</strong>
+- "Flash sale" is not a safety alert
+- Violates trust and legal regulations</p>
+<p>❌ <strong>Never delay critical alerts</strong>
+- Send within 5 minutes of verification
+- Lives depend on timely information</p>
+<p>❌ <strong>Never send alerts without expiration</strong>
+- All alerts must have resolution plan
+- Expired alerts clutter dashboards</p>
+<p>❌ <strong>Never share traveler contact info externally</strong>
+- Emergency responders get anonymized data only
+- GDPR/privacy compliance requirement</p>
+<hr />
+<h2 id="verification-checklist">✅ <strong>VERIFICATION CHECKLIST</strong><a class="headerlink" href="#verification-checklist" title="Permanent link">&para;</a></h2>
+<p>Before sending alert:</p>
+<ul>
+<li>[ ] Threat verified by 2+ official sources</li>
+<li>[ ] Severity level appropriate</li>
+<li>[ ] Message follows template structure</li>
+<li>[ ] No typos or formatting errors</li>
+<li>[ ] Affected areas correct</li>
+<li>[ ] Emergency contacts verified</li>
+<li>[ ] Expiration time set</li>
+<li>[ ] Supervisor notified (critical/emergency only)</li>
+</ul>
+<p>After sending:</p>
+<ul>
+<li>[ ] Delivery rate &gt; 80% within 5 minutes</li>
+<li>[ ] No bounces or failed deliveries</li>
+<li>[ ] Alert displays on traveler dashboards</li>
+<li>[ ] Audit log entry created</li>
+<li>[ ] Follow-up plan documented</li>
+</ul>
+<hr />
+<h2 id="escalation">🚨 <strong>ESCALATION</strong><a class="headerlink" href="#escalation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Issue</strong></th>
+<th><strong>Contact</strong></th>
+<th><strong>Response Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WhatsApp broadcast failing</td>
+<td>support@letsgobelize.app</td>
+<td>5 minutes (critical)</td>
+</tr>
+<tr>
+<td>Unsure if situation warrants alert</td>
+<td>Super admin + CTO</td>
+<td>10 minutes</td>
+</tr>
+<tr>
+<td>Alert sent to wrong recipients</td>
+<td>engineering@letsgobelize.app</td>
+<td>Immediate (rollback)</td>
+</tr>
+<tr>
+<td>Missing traveler (life-threatening)</td>
+<td>911 + security@letsgobelize.app</td>
+<td>Immediate</td>
+</tr>
+<tr>
+<td>Media inquiries about alert</td>
+<td>CTO only (do not respond directly)</td>
+<td>Forward immediately</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="post-incident-report-template">📋 <strong>Post-Incident Report Template</strong><a class="headerlink" href="#post-incident-report-template" title="Permanent link">&para;</a></h2>
+<p>After resolving critical/emergency alerts, complete this report within 24 hours:</p>
+<p>📄 <strong>See:</strong> <a href="../templates/post-incident-report/">templates/post-incident-report.md</a></p>
+<p><strong>Required Sections:</strong>
+1. Incident summary (what happened, when, where)
+2. Timeline of events and responses
+3. Alert messages sent (copies)
+4. Traveler impact assessment
+5. Response effectiveness evaluation
+6. Lessons learned
+7. Recommendations for future incidents</p>
+<p><strong>Submit to:</strong> security@letsgobelize.app</p>
+<hr />
+<h2 id="knowledge-check">🎓 <strong>Knowledge Check</strong><a class="headerlink" href="#knowledge-check" title="Permanent link">&para;</a></h2>
+<ol>
+<li>What severity level requires WhatsApp + SMS + Email + Push? <strong>Critical</strong></li>
+<li>How many official sources should verify a threat? <strong>At least 2</strong></li>
+<li>When should you send an "all clear" message? <strong>When danger has passed</strong></li>
+<li>Who can send safety alerts? <strong>Admin and super_admin only</strong></li>
+<li>What is the max WhatsApp message length? <strong>1024 characters</strong></li>
+</ol>
+<p>✅ <strong>If you answered 4/5 correctly, proceed to Module 07.</strong></p>
+<hr />
+<p><strong>Next Module:</strong> <a href="../07-WhatsApp-Operations/">07: WhatsApp Operations</a> →</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

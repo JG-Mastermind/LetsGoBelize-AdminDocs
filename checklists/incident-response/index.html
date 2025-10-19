@@ -1,0 +1,1661 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive admin onboarding manual for LetsGoBelize platform operations">
+      
+      
+      
+        <link rel="canonical" href="https://jg-mastermind.github.io/LetsGoBelize-AdminDocs/checklists/incident-response/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Incident Response Checklist - LetsGoBelize Admin Onboarding Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#incident-response-checklist" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LetsGoBelize Admin Onboarding Manual" class="md-header__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LetsGoBelize Admin Onboarding Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Incident Response Checklist
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LetsGoBelize Admin Onboarding Manual" class="md-nav__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LetsGoBelize Admin Onboarding Manual
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-Admin-ReadMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-Roles-Permissions-RLS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01. Roles, Permissions & RLS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-Onboarding-Admins-Invitations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02. Onboarding Admins & Invitations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-Tours-Management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03. Tours Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-Bookings-Flow-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04. Bookings Flow & Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-Payments-%26-Stripe-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05. Payments & Stripe Connect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-Safety-Alerts-Runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    06. Safety Alerts Runbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-WhatsApp-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    07. WhatsApp Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-AI-Assistant-Governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    08. AI Assistant Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../09-Storage_-Images-%26-Files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    09. Storage, Images & Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../10-Analytics-%26-Insights-Dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Analytics & Insights Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-Security-%26-Compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Security & Compliance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../12-Backups-%26-Disaster-Recovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Backups & Disaster Recovery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../13-Release-%26-Change-Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. Release & Change Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../14-Troubleshooting-Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14. Troubleshooting Playbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../15-Checklists-and-Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15. Checklists and Templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix-B-Glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-this-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 When to Use This Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 When to Use This Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-incidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Incidents:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operations-incidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operations Incidents:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-incidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Incidents:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-1-immediate-response-0-15-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ Phase 1: IMMEDIATE RESPONSE (0-15 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ Phase 1: IMMEDIATE RESPONSE (0-15 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-stop-the-bleeding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Stop the Bleeding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-activate-incident-commander" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Activate Incident Commander
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-notify-stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Notify Stakeholders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-preserve-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Preserve Evidence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-2-assessment-15-45-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Phase 2: ASSESSMENT (15-45 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Phase 2: ASSESSMENT (15-45 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-root-cause-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Root Cause Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Impact Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-determine-recovery-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Determine Recovery Path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-resolution-45-minutes-4-hours" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Phase 3: RESOLUTION (45 minutes - 4 hours)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Phase 3: RESOLUTION (45 minutes - 4 hours)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-execute-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Execute Fix
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-verify-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Verify Resolution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-communicate-all-clear" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Communicate All-Clear
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-post-incident-24-48-hours-after-resolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Phase 4: POST-INCIDENT (24-48 hours after resolution)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 Phase 4: POST-INCIDENT (24-48 hours after resolution)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-schedule-post-mortem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Schedule Post-Mortem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-complete-post-incident-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Complete Post-Incident Report
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-implement-preventative-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Implement Preventative Measures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-incident-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Special Incident Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Special Incident Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-breach-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Breach (CRITICAL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payment-processing-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Payment Processing Failure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-corruption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Corruption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emergency-contacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      📞 Emergency Contacts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incident-resolution-sign-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Incident Resolution Sign-Off
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="incident-response-checklist">Incident Response Checklist<a class="headerlink" href="#incident-response-checklist" title="Permanent link">&para;</a></h1>
+<p><strong>Emergency Procedures for Security and Operations Incidents</strong></p>
+<p>Use this checklist when a security breach, data loss, or critical operations failure occurs.</p>
+<hr />
+<h2 id="when-to-use-this-checklist">🚨 <strong>When to Use This Checklist</strong><a class="headerlink" href="#when-to-use-this-checklist" title="Permanent link">&para;</a></h2>
+<p>Activate incident response for:</p>
+<h3 id="security-incidents"><strong>Security Incidents:</strong><a class="headerlink" href="#security-incidents" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Unauthorized account access</li>
+<li>Data breach or exposure</li>
+<li>Ransomware or malware attack</li>
+<li>Compromised API keys</li>
+<li>Suspicious admin actions</li>
+<li>Customer reports identity theft</li>
+</ul>
+<h3 id="operations-incidents"><strong>Operations Incidents:</strong><a class="headerlink" href="#operations-incidents" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Database downtime &gt; 15 minutes</li>
+<li>Payment processing failures</li>
+<li>WhatsApp API complete outage</li>
+<li>Mass booking cancellations</li>
+<li>Safety alert system failure</li>
+<li>Website completely unreachable</li>
+</ul>
+<h3 id="data-incidents"><strong>Data Incidents:</strong><a class="headerlink" href="#data-incidents" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Accidental data deletion</li>
+<li>Incorrect bulk updates</li>
+<li>Data corruption</li>
+<li>Backup restoration needed</li>
+</ul>
+<p>⚠️ <strong>If life-threatening:</strong> Call 911 FIRST, then proceed with checklist.</p>
+<hr />
+<h2 id="phase-1-immediate-response-0-15-minutes">⏱️ <strong>Phase 1: IMMEDIATE RESPONSE (0-15 minutes)</strong><a class="headerlink" href="#phase-1-immediate-response-0-15-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-stop-the-bleeding"><strong>Step 1: Stop the Bleeding</strong><a class="headerlink" href="#step-1-stop-the-bleeding" title="Permanent link">&para;</a></h3>
+<p><strong>Time Limit:</strong> 5 minutes</p>
+<ul>
+<li>[ ] <strong>Contain incident:</strong> Take immediate action to prevent further damage:</li>
+<li>Security breach → Disable compromised accounts</li>
+<li>Data corruption → Stop all write operations</li>
+<li>API failure → Switch to manual backup processes</li>
+<li>
+<p>Mass error → Pause automated systems</p>
+</li>
+<li>
+<p>[ ] <strong>Document start time:</strong> Record exact time incident detected: [HH:MM AM/PM]</p>
+</li>
+<li>
+<p>[ ] <strong>Screenshot evidence:</strong> Capture error messages, logs, dashboards (before they disappear)</p>
+</li>
+</ul>
+<p>⚠️ <strong>DO NOT:</strong>
+- ❌ Try to "fix" without understanding root cause (may worsen issue)
+- ❌ Delete error logs or evidence
+- ❌ Communicate with users yet (coordinate messaging first)</p>
+<hr />
+<h3 id="step-2-activate-incident-commander"><strong>Step 2: Activate Incident Commander</strong><a class="headerlink" href="#step-2-activate-incident-commander" title="Permanent link">&para;</a></h3>
+<p><strong>Time Limit:</strong> 2 minutes</p>
+<ul>
+<li>[ ] Determine incident severity:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Severity</strong></th>
+<th><strong>Definition</strong></th>
+<th><strong>Commander</strong></th>
+<th><strong>Response Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P0</strong></td>
+<td>Critical - platform down, data loss</td>
+<td>CTO</td>
+<td>Immediate (call)</td>
+</tr>
+<tr>
+<td><strong>P1</strong></td>
+<td>Major - core features broken</td>
+<td>Super admin</td>
+<td>15 minutes</td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>Moderate - degraded service</td>
+<td>Operations manager</td>
+<td>1 hour</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td>Minor - isolated issue</td>
+<td>Senior admin</td>
+<td>4 hours</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>[ ] Contact Incident Commander via:</li>
+<li>P0/P1: Phone call (do not wait for email)</li>
+<li>
+<p>P2/P3: Slack #emergency-response channel + email</p>
+</li>
+<li>
+<p>[ ] Report initial assessment:
+  <div class="highlight"><pre><span></span><code>INCIDENT: [Brief headline]
+SEVERITY: [P0/P1/P2/P3]
+START TIME: [Timestamp]
+AFFECTED: [Users/systems/features]
+CONTAINMENT: [Actions taken]
+REPORTER: [Your name]
+</code></pre></div></p>
+</li>
+</ul>
+<hr />
+<h3 id="step-3-notify-stakeholders"><strong>Step 3: Notify Stakeholders</strong><a class="headerlink" href="#step-3-notify-stakeholders" title="Permanent link">&para;</a></h3>
+<p><strong>Time Limit:</strong> 5 minutes</p>
+<ul>
+<li>[ ] Alert core response team via Slack #emergency-response:</li>
+<li>Operations team</li>
+<li>Engineering on-call</li>
+<li>Customer support lead</li>
+<li>
+<p>Finance (if payment-related)</p>
+</li>
+<li>
+<p>[ ] <strong>DO NOT notify customers yet</strong> (wait for coordinated messaging)</p>
+</li>
+<li>
+<p>[ ] Create incident war room:</p>
+</li>
+<li>Zoom/Slack huddle for P0/P1</li>
+<li>Slack thread for P2/P3</li>
+</ul>
+<hr />
+<h3 id="step-4-preserve-evidence"><strong>Step 4: Preserve Evidence</strong><a class="headerlink" href="#step-4-preserve-evidence" title="Permanent link">&para;</a></h3>
+<p><strong>Time Limit:</strong> 3 minutes</p>
+<ul>
+<li>[ ] Screenshot all error messages</li>
+<li>[ ] Export relevant logs (before they rotate):</li>
+<li>Database logs</li>
+<li>Application logs</li>
+<li>API request logs</li>
+<li>WhatsApp delivery logs</li>
+<li>[ ] Note which users/accounts affected</li>
+<li>[ ] Save system state snapshots</li>
+</ul>
+<hr />
+<h2 id="phase-2-assessment-15-45-minutes">🔍 <strong>Phase 2: ASSESSMENT (15-45 minutes)</strong><a class="headerlink" href="#phase-2-assessment-15-45-minutes" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-root-cause-analysis"><strong>Step 1: Root Cause Analysis</strong><a class="headerlink" href="#step-1-root-cause-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Gather facts (do not speculate):</li>
+<li>What exactly happened?</li>
+<li>When did it start?</li>
+<li>What triggered it? (code deploy, manual action, external API)</li>
+<li>How many users affected?</li>
+<li>
+<p>What data exposed/corrupted?</p>
+</li>
+<li>
+<p>[ ] Check recent changes:</p>
+</li>
+<li>[ ] Code deployments in last 24 hours</li>
+<li>[ ] Database migrations in last 7 days</li>
+<li>[ ] Admin actions in last hour (check audit log)</li>
+<li>
+<p>[ ] External API status pages (Stripe, WhatsApp, Supabase)</p>
+</li>
+<li>
+<p>[ ] Reproduce issue (in staging if possible):</p>
+</li>
+<li>Can you trigger the issue intentionally?</li>
+<li>Does it happen consistently or intermittently?</li>
+</ul>
+<hr />
+<h3 id="step-2-impact-assessment"><strong>Step 2: Impact Assessment</strong><a class="headerlink" href="#step-2-impact-assessment" title="Permanent link">&para;</a></h3>
+<p>Calculate blast radius:</p>
+<ul>
+<li>[ ] <strong>Users affected:</strong></li>
+<li>Total count: [X]</li>
+<li>Roles: [travelers/guides/admins]</li>
+<li>
+<p>Geographic distribution: [areas]</p>
+</li>
+<li>
+<p>[ ] <strong>Systems affected:</strong></p>
+</li>
+<li>[ ] Website/frontend</li>
+<li>[ ] Admin dashboard</li>
+<li>[ ] Mobile apps</li>
+<li>[ ] Database</li>
+<li>[ ] Payment processing</li>
+<li>[ ] Email/SMS/WhatsApp</li>
+<li>
+<p>[ ] AI Concierge</p>
+</li>
+<li>
+<p>[ ] <strong>Data affected:</strong></p>
+</li>
+<li>[ ] Customer PII exposed? (CRITICAL)</li>
+<li>[ ] Payment data exposed? (CRITICAL)</li>
+<li>[ ] Bookings lost/corrupted?</li>
+<li>
+<p>[ ] Tours data corrupted?</p>
+</li>
+<li>
+<p>[ ] <strong>Revenue impact:</strong></p>
+</li>
+<li>Estimated lost bookings: $[X]</li>
+<li>Refunds required: $[X]</li>
+<li>Downtime cost: $[X/hour]</li>
+</ul>
+<hr />
+<h3 id="step-3-determine-recovery-path"><strong>Step 3: Determine Recovery Path</strong><a class="headerlink" href="#step-3-determine-recovery-path" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Identify fix options:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Option</strong></th>
+<th><strong>Time to Fix</strong></th>
+<th><strong>Risk</strong></th>
+<th><strong>Impact</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rollback deployment</td>
+<td>15 min</td>
+<td>Low</td>
+<td>[Impact]</td>
+</tr>
+<tr>
+<td>Database restore</td>
+<td>1-2 hours</td>
+<td>Medium</td>
+<td>[Impact]</td>
+</tr>
+<tr>
+<td>Hotfix patch</td>
+<td>2-4 hours</td>
+<td>Medium</td>
+<td>[Impact]</td>
+</tr>
+<tr>
+<td>Full rebuild</td>
+<td>8+ hours</td>
+<td>High</td>
+<td>[Impact]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>[ ] Choose fastest, lowest-risk option</li>
+<li>[ ] Get Incident Commander approval</li>
+<li>[ ] Assign owner: [Name]</li>
+<li>[ ] Set target resolution time: [HH:MM]</li>
+</ul>
+<hr />
+<h2 id="phase-3-resolution-45-minutes-4-hours">🔧 <strong>Phase 3: RESOLUTION (45 minutes - 4 hours)</strong><a class="headerlink" href="#phase-3-resolution-45-minutes-4-hours" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-execute-fix"><strong>Step 1: Execute Fix</strong><a class="headerlink" href="#step-1-execute-fix" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Implement approved solution</li>
+<li>[ ] Test in staging first (if P2/P3)</li>
+<li>[ ] Document every step taken (for post-mortem)</li>
+<li>[ ] Monitor systems during fix application</li>
+</ul>
+<hr />
+<h3 id="step-2-verify-resolution"><strong>Step 2: Verify Resolution</strong><a class="headerlink" href="#step-2-verify-resolution" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] <strong>Smoke tests</strong> (quick checks):</li>
+<li>[ ] Website loads correctly</li>
+<li>[ ] Users can log in</li>
+<li>[ ] Bookings process successfully</li>
+<li>[ ] Payments work end-to-end</li>
+<li>[ ] WhatsApp sending</li>
+<li>
+<p>[ ] Dashboard functional</p>
+</li>
+<li>
+<p>[ ] <strong>Data integrity checks:</strong></p>
+</li>
+<li>[ ] Run database consistency checks</li>
+<li>[ ] Verify backups are current</li>
+<li>
+<p>[ ] Confirm no data loss</p>
+</li>
+<li>
+<p>[ ] <strong>User acceptance:</strong></p>
+</li>
+<li>[ ] Ask 2-3 affected users to test</li>
+<li>[ ] Verify they can complete critical workflows</li>
+</ul>
+<hr />
+<h3 id="step-3-communicate-all-clear"><strong>Step 3: Communicate All-Clear</strong><a class="headerlink" href="#step-3-communicate-all-clear" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>[ ] <strong>Internal announcement</strong> (Slack #emergency-response):
+  <div class="highlight"><pre><span></span><code>INCIDENT RESOLVED: [Headline]
+
+FIX APPLIED: [Brief description]
+RESOLUTION TIME: [Duration]
+IMPACT: [Summary]
+NEXT STEPS: [Post-mortem scheduled]
+
+Systems are now stable. Resume normal operations.
+</code></pre></div></p>
+</li>
+<li>
+<p>[ ] <strong>Customer communication</strong> (if customers were affected):</p>
+</li>
+</ul>
+<p><strong>For website downtime:</strong>
+  <div class="highlight"><pre><span></span><code>Subject: Service Restored - LetsGoBelize.app
+
+Hi [Customer Name],
+
+Our platform experienced a brief service disruption between [Start Time] and [End Time] on [Date]. 
+
+IMPACT: [What customers experienced]
+RESOLUTION: All systems are now fully operational.
+
+If you experienced issues with bookings during this time, please contact us at hello@letsgobelize.app for assistance.
+
+We apologize for the inconvenience.
+
+LetsGoBelize.app Team
+</code></pre></div></p>
+<p><strong>For data breach (CRITICAL):</strong>
+  <div class="highlight"><pre><span></span><code>Subject: URGENT - Security Incident Notification
+
+Hi [Customer Name],
+
+We are writing to inform you of a security incident that may have affected your account.
+
+WHAT HAPPENED: [Specific details]
+DATA AFFECTED: [What data was exposed]
+ACTIONS WE TOOK: [Immediate response]
+ACTIONS YOU SHOULD TAKE: 
+- Change your password immediately
+- Monitor your accounts for suspicious activity
+- [Additional steps]
+
+We take your privacy seriously and have implemented additional safeguards to prevent future incidents.
+
+For questions: security@letsgobelize.app
+
+LetsGoBelize.app Security Team
+</code></pre></div></p>
+<hr />
+<h2 id="phase-4-post-incident-24-48-hours-after-resolution">📋 <strong>Phase 4: POST-INCIDENT (24-48 hours after resolution)</strong><a class="headerlink" href="#phase-4-post-incident-24-48-hours-after-resolution" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-schedule-post-mortem"><strong>Step 1: Schedule Post-Mortem</strong><a class="headerlink" href="#step-1-schedule-post-mortem" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Set meeting within 48 hours</li>
+<li>[ ] Invite participants:</li>
+<li>[ ] Incident Commander</li>
+<li>[ ] All responders</li>
+<li>[ ] Engineering lead</li>
+<li>[ ] Operations manager</li>
+<li>[ ] Customer support lead</li>
+</ul>
+<hr />
+<h3 id="step-2-complete-post-incident-report"><strong>Step 2: Complete Post-Incident Report</strong><a class="headerlink" href="#step-2-complete-post-incident-report" title="Permanent link">&para;</a></h3>
+<p>Use template: <a href="../../templates/post-incident-report/">templates/post-incident-report.md</a></p>
+<p>Required sections:
+- [ ] Executive summary (3-5 sentences)
+- [ ] Timeline of events (minute-by-minute)
+- [ ] Root cause analysis
+- [ ] Impact assessment (users, revenue, data)
+- [ ] Response evaluation (what went well/poorly)
+- [ ] Action items (prevent recurrence)
+- [ ] Recommendations</p>
+<p><strong>Submit to:</strong> security@letsgobelize.app + CTO</p>
+<hr />
+<h3 id="step-3-implement-preventative-measures"><strong>Step 3: Implement Preventative Measures</strong><a class="headerlink" href="#step-3-implement-preventative-measures" title="Permanent link">&para;</a></h3>
+<p>From post-mortem action items:</p>
+<ul>
+<li>[ ] Update monitoring/alerting</li>
+<li>[ ] Improve documentation</li>
+<li>[ ] Add automated tests</li>
+<li>[ ] Update runbooks</li>
+<li>[ ] Schedule training</li>
+<li>[ ] Revise incident response checklist (this document)</li>
+</ul>
+<p><strong>Track in:</strong> Project management system with owners and deadlines</p>
+<hr />
+<h2 id="special-incident-types">⚠️ <strong>Special Incident Types</strong><a class="headerlink" href="#special-incident-types" title="Permanent link">&para;</a></h2>
+<h3 id="data-breach-critical"><strong>Data Breach (CRITICAL)</strong><a class="headerlink" href="#data-breach-critical" title="Permanent link">&para;</a></h3>
+<p>Additional steps REQUIRED:</p>
+<ul>
+<li>[ ] Notify CTO immediately (within 15 minutes)</li>
+<li>[ ] Preserve forensic evidence (do NOT modify logs)</li>
+<li>[ ] Contact legal counsel</li>
+<li>[ ] Prepare regulatory notifications (GDPR, local laws)</li>
+<li>[ ] Customer notification within 72 hours</li>
+<li>[ ] Offer credit monitoring (if payment data exposed)</li>
+<li>[ ] File incident reports with authorities</li>
+</ul>
+<hr />
+<h3 id="payment-processing-failure"><strong>Payment Processing Failure</strong><a class="headerlink" href="#payment-processing-failure" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Switch to manual payment collection (if possible)</li>
+<li>[ ] Notify finance team</li>
+<li>[ ] Contact Stripe support</li>
+<li>[ ] Document all failed transactions</li>
+<li>[ ] Manually process payments when system restored</li>
+<li>[ ] Reconcile all transactions before month-end close</li>
+</ul>
+<hr />
+<h3 id="database-corruption"><strong>Database Corruption</strong><a class="headerlink" href="#database-corruption" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Stop ALL write operations immediately</li>
+<li>[ ] Assess corruption extent (use DB integrity checks)</li>
+<li>[ ] Restore from most recent clean backup</li>
+<li>[ ] Replay transactions from write-ahead log (engineering only)</li>
+<li>[ ] Verify data integrity post-restoration</li>
+<li>[ ] Investigate root cause (disk failure, bad migration, etc.)</li>
+</ul>
+<hr />
+<h2 id="emergency-contacts">📞 <strong>Emergency Contacts</strong><a class="headerlink" href="#emergency-contacts" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Role</strong></th>
+<th><strong>Contact</strong></th>
+<th><strong>Phone</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Incident Commander (P0/P1)</strong></td>
+<td>CTO</td>
+<td>[Provided to admins]</td>
+</tr>
+<tr>
+<td><strong>Engineering On-Call</strong></td>
+<td>engineering@letsgobelize.app</td>
+<td>[Slack alert]</td>
+</tr>
+<tr>
+<td><strong>Operations Manager</strong></td>
+<td>ops@letsgobelize.app</td>
+<td>[Slack alert]</td>
+</tr>
+<tr>
+<td><strong>Security Team</strong></td>
+<td>security@letsgobelize.app</td>
+<td>[Emergency line]</td>
+</tr>
+<tr>
+<td><strong>Customer Support Lead</strong></td>
+<td>support@letsgobelize.app</td>
+<td>[Slack alert]</td>
+</tr>
+<tr>
+<td><strong>Finance Team</strong></td>
+<td>finance@letsgobelize.app</td>
+<td>[Business hours]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>After-Hours:</strong> Check Slack #emergency-response for on-call rotation</p>
+<hr />
+<h2 id="incident-resolution-sign-off">✅ <strong>Incident Resolution Sign-Off</strong><a class="headerlink" href="#incident-resolution-sign-off" title="Permanent link">&para;</a></h2>
+<p>Complete this before closing incident:</p>
+<ul>
+<li>[ ] Root cause identified and documented</li>
+<li>[ ] Fix implemented and verified</li>
+<li>[ ] All affected users notified</li>
+<li>[ ] Post-incident report scheduled</li>
+<li>[ ] Action items created and assigned</li>
+<li>[ ] Incident closed in tracking system</li>
+</ul>
+<p><strong>Incident Commander Sign-Off:</strong></p>
+<p>Name: <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em>
+Date/Time: </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em>_
+Signature: </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong></p>
+<hr />
+<p><strong>Checklist Version:</strong> 1.0
+<strong>Last Updated:</strong> October 8, 2025
+<strong>Next Review:</strong> Quarterly</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

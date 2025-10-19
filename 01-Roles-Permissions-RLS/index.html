@@ -1,0 +1,1828 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive admin onboarding manual for LetsGoBelize platform operations">
+      
+      
+      
+        <link rel="canonical" href="https://jg-mastermind.github.io/LetsGoBelize-AdminDocs/01-Roles-Permissions-RLS/">
+      
+      
+        <link rel="prev" href="../00-Admin-ReadMe/">
+      
+      
+        <link rel="next" href="../02-Onboarding-Admins-Invitations/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>01. Roles, Permissions & RLS - LetsGoBelize Admin Onboarding Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#module-01-roles-permissions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LetsGoBelize Admin Onboarding Manual" class="md-header__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LetsGoBelize Admin Onboarding Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01. Roles, Permissions & RLS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LetsGoBelize Admin Onboarding Manual" class="md-nav__button md-logo" aria-label="LetsGoBelize Admin Onboarding Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    LetsGoBelize Admin Onboarding Manual
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LetsGoBelize-AdminDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-Admin-ReadMe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modules
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    01. Roles, Permissions & RLS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    01. Roles, Permissions & RLS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 PURPOSE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ WHEN TO USE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbac-matrix-who-can-do-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 RBAC Matrix (Who Can Do What)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 RBAC Matrix (Who Can Do What)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#super_admin-full-platform-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      super_admin (Full Platform Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-operations-manager-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      admin (Operations Manager Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blogger-content-creator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      blogger (Content Creator Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guide-tour-operator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      guide (Tour Operator Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traveler-customer-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      traveler (Customer Access)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-security-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Platform Security Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Platform Security Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-data-protection-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Data Protection Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-this-means-for-you" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Means for You
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safe-vs-unsafe-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛡️ Safe vs Unsafe Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ Safe vs Unsafe Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safe-actions-always-allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safe Actions (Always Allowed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsafe-actions-require-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsafe Actions (Require Approval)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ DO / DO NOT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ DO / DO NOT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ VERIFICATION CHECKLIST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 ESCALATION GUIDE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 ESCALATION GUIDE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-escalate" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Escalate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation-email-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation Email Template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Examples &amp; Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Examples &amp; Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-guide-cant-see-booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Guide Can't See Booking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-admin-cant-edit-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Admin Can't Edit User Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-blogger-sees-insufficient-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Blogger Sees "Insufficient Permissions"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-permission-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Quick Reference: Permission Flowchart
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Additional Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Knowledge Check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Onboarding-Admins-Invitations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02. Onboarding Admins & Invitations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Tours-Management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03. Tours Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Bookings-Flow-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    04. Bookings Flow & Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Payments-%26-Stripe-Connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    05. Payments & Stripe Connect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-Safety-Alerts-Runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    06. Safety Alerts Runbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-WhatsApp-Operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    07. WhatsApp Operations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-AI-Assistant-Governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    08. AI Assistant Governance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Storage_-Images-%26-Files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    09. Storage, Images & Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Analytics-%26-Insights-Dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. Analytics & Insights Dashboard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Security-%26-Compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. Security & Compliance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-Backups-%26-Disaster-Recovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    12. Backups & Disaster Recovery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-Release-%26-Change-Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13. Release & Change Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-Troubleshooting-Playbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14. Troubleshooting Playbook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-Checklists-and-Templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    15. Checklists and Templates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix-B-Glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 PURPOSE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏰ WHEN TO USE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rbac-matrix-who-can-do-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 RBAC Matrix (Who Can Do What)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 RBAC Matrix (Who Can Do What)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#super_admin-full-platform-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      super_admin (Full Platform Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-operations-manager-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      admin (Operations Manager Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blogger-content-creator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      blogger (Content Creator Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guide-tour-operator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      guide (Tour Operator Access)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traveler-customer-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      traveler (Customer Access)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-security-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Platform Security Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Platform Security Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-data-protection-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Data Protection Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-this-means-for-you" class="md-nav__link">
+    <span class="md-ellipsis">
+      What This Means for You
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safe-vs-unsafe-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛡️ Safe vs Unsafe Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛡️ Safe vs Unsafe Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#safe-actions-always-allowed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safe Actions (Always Allowed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unsafe-actions-require-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsafe Actions (Require Approval)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ DO / DO NOT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ DO / DO NOT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#do-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      DO NOT:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ VERIFICATION CHECKLIST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 ESCALATION GUIDE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 ESCALATION GUIDE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-escalate" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Escalate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escalation-email-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escalation Email Template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Examples &amp; Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Examples &amp; Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-guide-cant-see-booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Guide Can't See Booking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-admin-cant-edit-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Admin Can't Edit User Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-blogger-sees-insufficient-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Blogger Sees "Insufficient Permissions"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference-permission-flowchart" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Quick Reference: Permission Flowchart
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      📖 Additional Resources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Knowledge Check
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="module-01-roles-permissions">Module 01: Roles &amp; Permissions<a class="headerlink" href="#module-01-roles-permissions" title="Permanent link">&para;</a></h1>
+<p><strong>Module Duration:</strong> 30 minutes | <strong>Difficulty:</strong> Beginner
+<strong>Prerequisites:</strong> Admin Dashboard access</p>
+<hr />
+<h2 id="purpose">🎯 <strong>PURPOSE</strong><a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
+<p>Understanding roles and permissions is critical to safely operating LetsGoBelize.app. This module teaches you:
+- What each role can and cannot do
+- How platform security protects data
+- When to escalate permission requests
+- How to recognize unauthorized actions</p>
+<hr />
+<h2 id="when-to-use">⏰ <strong>WHEN TO USE</strong><a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<p>Use this module when:
+- Starting your first day as admin
+- Before creating invitations for new team members
+- Troubleshooting "Permission Denied" errors
+- Reviewing security audit findings
+- Training new staff on the platform</p>
+<hr />
+<h2 id="rbac-matrix-who-can-do-what">📋 <strong>RBAC Matrix (Who Can Do What)</strong><a class="headerlink" href="#rbac-matrix-who-can-do-what" title="Permanent link">&para;</a></h2>
+<h3 id="super_admin-full-platform-access"><strong>super_admin (Full Platform Access)</strong><a class="headerlink" href="#super_admin-full-platform-access" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Can Do:</strong>
+- Manage all users (create, edit, delete, change roles)
+- Access all tours and bookings (including other guides' content)
+- Process all payments and refunds
+- Send safety alerts to all travelers
+- View and export all analytics
+- Manage AI Concierge system settings
+- Configure platform security settings
+- Create admin invitations
+- Access financial reports and payouts
+- Publish/unpublish any content</p>
+<p>❌ <strong>Cannot Do:</strong>
+- Nothing (full access granted)</p>
+<p>⚠️ <strong>Caution:</strong> Super admin powers are permanent. Only assign this role to trusted leadership.</p>
+<hr />
+<h3 id="admin-operations-manager-access"><strong>admin (Operations Manager Access)</strong><a class="headerlink" href="#admin-operations-manager-access" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Can Do:</strong>
+- View all tours and bookings
+- Edit any tour or booking
+- Process refunds within established limits
+- Send safety alerts (location-specific)
+- Publish blog posts
+- Access analytics dashboards
+- Upload images to platform storage
+- Manage calendar and messages
+- View financial transaction reports</p>
+<p>❌ <strong>Cannot Do:</strong>
+- Change user roles (must request from super admin)
+- Modify platform security settings
+- Process large refunds (requires super admin approval)
+- Delete users or permanently remove data
+- Access AI training data or expert validation queue</p>
+<p>💡 <strong>Tip:</strong> If you need to change someone's role, email the super admin with justification.</p>
+<hr />
+<h3 id="blogger-content-creator-access"><strong>blogger (Content Creator Access)</strong><a class="headerlink" href="#blogger-content-creator-access" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Can Do:</strong>
+- Create, edit, and publish blog posts
+- Upload blog images to designated storage
+- View blog analytics (views, engagement)
+- Manage own author profile
+- Access content calendar</p>
+<p>❌ <strong>Cannot Do:</strong>
+- View or edit tours
+- Access bookings or payments
+- Send safety alerts
+- View user analytics
+- Edit other bloggers' posts (unless super admin)
+- Upload images to restricted storage areas</p>
+<p>💡 <strong>Tip:</strong> Bloggers should never have access to traveler personal information.</p>
+<hr />
+<h3 id="guide-tour-operator-access"><strong>guide (Tour Operator Access)</strong><a class="headerlink" href="#guide-tour-operator-access" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Can Do:</strong>
+- Create and edit <strong>own</strong> tours
+- View <strong>own</strong> bookings and customer details
+- Upload images to tour storage
+- Manage own calendar availability
+- View own earnings and payout history
+- Respond to customer messages
+- Update tour availability/pricing</p>
+<p>❌ <strong>Cannot Do:</strong>
+- View other guides' tours or bookings
+- Access platform-wide analytics
+- Send safety alerts
+- Process refunds (must request from admin)
+- Edit blog posts
+- Change tour approval status (auto-published after review)</p>
+<p>⚠️ <strong>Important:</strong> Guides see ONLY their own data due to platform security.</p>
+<hr />
+<h3 id="traveler-customer-access"><strong>traveler (Customer Access)</strong><a class="headerlink" href="#traveler-customer-access" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Can Do:</strong>
+- Browse and book tours
+- View own bookings
+- Manage profile and preferences
+- Upload profile picture
+- Contact guides via messages
+- Request refunds (admin approves)</p>
+<p>❌ <strong>Cannot Do:</strong>
+- Access Admin Dashboard
+- View other travelers' data
+- Create tours or blog posts
+- Access analytics
+- Send safety alerts</p>
+<p>💡 <strong>This role is for customers only—no backend access.</strong></p>
+<hr />
+<h2 id="platform-security-overview">🔒 <strong>Platform Security Overview</strong><a class="headerlink" href="#platform-security-overview" title="Permanent link">&para;</a></h2>
+<h3 id="how-data-protection-works"><strong>How Data Protection Works</strong><a class="headerlink" href="#how-data-protection-works" title="Permanent link">&para;</a></h3>
+<p>The platform automatically enforces data access rules based on your role:
+- Guides see only <strong>their</strong> tours and bookings
+- Admins can view all operational data
+- Travelers can only access their own bookings and profile
+- Security rules are managed by the engineering team</p>
+<h3 id="what-this-means-for-you"><strong>What This Means for You</strong><a class="headerlink" href="#what-this-means-for-you" title="Permanent link">&para;</a></h3>
+<p>When you log in, the system automatically:
+- Shows you only the data you're authorized to see
+- Prevents accidental access to restricted information
+- Blocks unauthorized modifications
+- Enforces role-based rules consistently</p>
+<p><strong>Example</strong>: A guide viewing bookings will only see bookings for their own tours, even if they try to access other data.</p>
+<p>💡 <strong>Key Takeaway:</strong> Security policies are configured by the engineering team and cannot be changed from the dashboard.</p>
+<hr />
+<h2 id="safe-vs-unsafe-actions">🛡️ <strong>Safe vs Unsafe Actions</strong><a class="headerlink" href="#safe-vs-unsafe-actions" title="Permanent link">&para;</a></h2>
+<h3 id="safe-actions-always-allowed"><strong>Safe Actions (Always Allowed)</strong><a class="headerlink" href="#safe-actions-always-allowed" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Viewing data within your role</strong>
+- Guide viewing own bookings
+- Admin viewing all analytics
+- Blogger viewing own posts</p>
+<p>✅ <strong>Editing your own profile</strong>
+- Update name, bio, profile picture
+- Change dietary restrictions (travelers)</p>
+<p>✅ <strong>Creating content you're authorized for</strong>
+- Guide creating new tour
+- Blogger publishing blog post
+- Admin sending safety alert</p>
+<hr />
+<h3 id="unsafe-actions-require-approval"><strong>Unsafe Actions (Require Approval)</strong><a class="headerlink" href="#unsafe-actions-require-approval" title="Permanent link">&para;</a></h3>
+<p>⚠️ <strong>Editing data outside your scope</strong>
+- Guide editing another guide's tour → <strong>Escalate to admin</strong>
+- Admin changing user roles → <strong>Escalate to super admin</strong>
+- Blogger accessing booking data → <strong>Permission denied (by design)</strong></p>
+<p>⚠️ <strong>Financial operations above limits</strong>
+- Admin issuing refund &gt; established limit → <strong>Requires super admin approval</strong>
+- Guide requesting early payout → <strong>Contact payments@letsgobelize.app</strong></p>
+<p>⚠️ <strong>Database or security changes</strong>
+- Requesting security policy changes → <strong>Email engineering@letsgobelize.app with business justification</strong>
+- Adding new admin users → <strong>Use Module 02 invitation process</strong></p>
+<hr />
+<h2 id="do-do-not">⚠️ <strong>DO / DO NOT</strong><a class="headerlink" href="#do-do-not" title="Permanent link">&para;</a></h2>
+<h3 id="do"><strong>DO:</strong><a class="headerlink" href="#do" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Stay within your role boundaries</strong>
+- Only perform actions your role allows
+- Request permission escalation via proper channels</p>
+<p>✅ <strong>Verify permissions before bulk actions</strong>
+- Test with 1 record before updating 100
+- Check you're logged in with correct role</p>
+<p>✅ <strong>Report permission errors immediately</strong>
+- Screenshot "Access Denied" messages
+- Email security@letsgobelize.app</p>
+<p>✅ <strong>Ask when uncertain</strong>
+- Better to ask than break production</p>
+<hr />
+<h3 id="do-not"><strong>DO NOT:</strong><a class="headerlink" href="#do-not" title="Permanent link">&para;</a></h3>
+<p>❌ <strong>Never share login credentials</strong>
+- Each admin gets their own account
+- No "shared admin" accounts</p>
+<p>❌ <strong>Never try to bypass security</strong>
+- Do not attempt SQL queries directly
+- Do not use browser dev tools to modify requests</p>
+<p>❌ <strong>Never change roles without authorization</strong>
+- Only super admin can promote users
+- Unauthorized role changes trigger security alerts</p>
+<p>❌ <strong>Never access data outside your role</strong>
+- Guides: Don't try to view other guides' bookings
+- Bloggers: Don't attempt to access payment data</p>
+<hr />
+<h2 id="verification-checklist">✅ <strong>VERIFICATION CHECKLIST</strong><a class="headerlink" href="#verification-checklist" title="Permanent link">&para;</a></h2>
+<p>Before proceeding to other modules, confirm:</p>
+<ul>
+<li>[ ] I understand my assigned role and its limits</li>
+<li>[ ] I know which actions require escalation</li>
+<li>[ ] I can explain security in simple terms</li>
+<li>[ ] I know who to contact for permission changes</li>
+<li>[ ] I've tested my dashboard access successfully</li>
+<li>[ ] I can identify safe vs unsafe actions</li>
+<li>[ ] I have bookmarked the escalation contacts</li>
+</ul>
+<hr />
+<h2 id="escalation-guide">🚨 <strong>ESCALATION GUIDE</strong><a class="headerlink" href="#escalation-guide" title="Permanent link">&para;</a></h2>
+<h3 id="when-to-escalate"><strong>When to Escalate</strong><a class="headerlink" href="#when-to-escalate" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Scenario</strong></th>
+<th><strong>Contact</strong></th>
+<th><strong>Response Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Access Denied" error for authorized action</td>
+<td>hello@letsgobelize.app</td>
+<td>2 hours</td>
+</tr>
+<tr>
+<td>Need to change a user's role</td>
+<td>Super admin via email</td>
+<td>24 hours</td>
+</tr>
+<tr>
+<td>Suspected security breach (unauthorized access)</td>
+<td>security@letsgobelize.app</td>
+<td>15 minutes</td>
+</tr>
+<tr>
+<td>security policy blocking legitimate work</td>
+<td>engineering@letsgobelize.app</td>
+<td>48 hours</td>
+</tr>
+<tr>
+<td>Need temporary elevated permissions</td>
+<td>Super admin + justification</td>
+<td>24 hours</td>
+</tr>
+</tbody>
+</table>
+<h3 id="escalation-email-template"><strong>Escalation Email Template</strong><a class="headerlink" href="#escalation-email-template" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Subject: Permission Request - [Your Name] - [Date]
+
+Role: [Your current role]
+Request: [Specific permission needed]
+Reason: [Business justification]
+Urgency: [Low/Medium/High]
+Affected Users: [If applicable]
+
+Example Action:
+- Current: I get &quot;Access Denied&quot; when trying to [specific action]
+- Needed: Temporary admin access to [specific table/feature]
+- Duration: [How long you need elevated access]
+
+Thank you,
+[Your Name]
+</code></pre></div>
+<hr />
+<h2 id="examples-scenarios">📚 <strong>Examples &amp; Scenarios</strong><a class="headerlink" href="#examples-scenarios" title="Permanent link">&para;</a></h2>
+<h3 id="scenario-1-guide-cant-see-booking"><strong>Scenario 1: Guide Can't See Booking</strong><a class="headerlink" href="#scenario-1-guide-cant-see-booking" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> Guide reports they can't see a booking for their tour.</p>
+<p><strong>Troubleshooting:</strong>
+1. Verify the booking exists (admin checks <code>bookings</code> table)
+2. Confirm booking's <code>guide_id</code> matches the guide's <code>user_id</code>
+3. Check security policy <code>guides_read_own_bookings</code> is active
+4. If data mismatch: Update booking's <code>guide_id</code> (admin action)</p>
+<p><strong>Root Cause:</strong> Usually a data entry error where booking was created without proper <code>guide_id</code> reference.</p>
+<hr />
+<h3 id="scenario-2-admin-cant-edit-user-role"><strong>Scenario 2: Admin Can't Edit User Role</strong><a class="headerlink" href="#scenario-2-admin-cant-edit-user-role" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> Admin tries to promote a guide to admin but gets "Permission Denied."</p>
+<p><strong>Expected Behavior:</strong> Only super admins can change roles (security audit requirement from August 23, 2025).</p>
+<p><strong>Solution:</strong>
+1. Admin emails super admin with request
+2. Super admin verifies request is legitimate
+3. Super admin updates role via User Management page
+4. System sends audit log entry</p>
+<p><strong>Why:</strong> Role changes are high-risk. Centralized control prevents privilege escalation attacks.</p>
+<hr />
+<h3 id="scenario-3-blogger-sees-insufficient-permissions"><strong>Scenario 3: Blogger Sees "Insufficient Permissions"</strong><a class="headerlink" href="#scenario-3-blogger-sees-insufficient-permissions" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> Blogger tries to edit another blogger's post.</p>
+<p><strong>Expected Behavior:</strong> security policy <code>bloggers_update_own_posts</code> restricts updates to posts where <code>author_id = user.id</code>.</p>
+<p><strong>Solution:</strong>
+1. Verify blogger is trying to edit someone else's post
+2. If legitimate need: Contact admin to edit post
+3. If unauthorized: Remind blogger of role boundaries</p>
+<p><strong>Why:</strong> Content ownership prevents accidental overwrites.</p>
+<hr />
+<h2 id="quick-reference-permission-flowchart">🔍 <strong>Quick Reference: Permission Flowchart</strong><a class="headerlink" href="#quick-reference-permission-flowchart" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Need to perform an action?
+    |
+    ├─ Is it within your role? (Check RBAC matrix)
+    |   ├─ YES → Proceed with action
+    |   └─ NO → Escalate to higher role
+    |
+    ├─ Do you get &quot;Access Denied&quot;?
+    |   ├─ YES → Check security policies (contact engineering)
+    |   └─ NO → Action successful
+    |
+    └─ Unsure if authorized?
+        └─ Ask supervisor BEFORE attempting
+</code></pre></div>
+<hr />
+<h2 id="additional-resources">📖 <strong>Additional Resources</strong><a class="headerlink" href="#additional-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Security Audit (August 23, 2025):</strong> Original source of security requirements</li>
+<li><strong>Platform Security Documentation:</strong> Contact engineering team for technical details</li>
+<li><strong>User Role Change Log:</strong> Contact super admin for access</li>
+</ul>
+<hr />
+<h2 id="knowledge-check">🎓 <strong>Knowledge Check</strong><a class="headerlink" href="#knowledge-check" title="Permanent link">&para;</a></h2>
+<p>Test your understanding:</p>
+<ol>
+<li>Can a guide view another guide's bookings? <strong>NO - security prevents this</strong></li>
+<li>Who can change user roles? <strong>Only super_admin</strong></li>
+<li>What should you do if you get "Access Denied" for a legitimate action? <strong>Email hello@letsgobelize.app with details</strong></li>
+<li>Can admin users edit security policies? <strong>NO - Only engineering can modify security</strong></li>
+<li>What's the refund limit for regular admins? <strong>established limit USD</strong></li>
+</ol>
+<p>✅ <strong>If you answered 4/5 correctly, proceed to Module 02. Otherwise, re-read the RBAC Matrix.</strong></p>
+<hr />
+<p><strong>Next Module:</strong> <a href="../02-Onboarding-Admins-Invitations/">02: Onboarding Admins &amp; Invitations</a> →</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
