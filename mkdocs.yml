@@ -1,0 +1,64 @@
+site_name: "LetsGoBelize Admin Onboarding Manual"
+site_url: https://jg-mastermind.github.io/LetsGoBelize-AdminDocs/
+site_description: Comprehensive admin onboarding manual for LetsGoBelize platform operations
+repo_url: https://github.com/JG-Mastermind/LetsGoBelize-AdminDocs
+repo_name: LetsGoBelize-AdminDocs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - 'Home': index.md
+  - 'Project Overview': 00-Admin-ReadMe.md
+  - 'Modules':
+    - '01. Roles, Permissions & RLS': 01-Roles-Permissions-RLS.md
+    - '02. Onboarding Admins & Invitations': 02-Onboarding-Admins-Invitations.md
+    - '03. Tours Management': 03-Tours-Management.md
+    - '04. Bookings Flow & Operations': 04-Bookings-Flow-Operations.md
+    - '05. Payments & Stripe Connect': 05-Payments-&-Stripe-Connect.md
+    - '06. Safety Alerts Runbook': 06-Safety-Alerts-Runbook.md
+    - '07. WhatsApp Operations': 07-WhatsApp-Operations.md
+    - '08. AI Assistant Governance': 08-AI-Assistant-Governance.md
+    - '09. Storage, Images & Files': 09-Storage_-Images-&-Files.md
+    - '10. Analytics & Insights Dashboard': 10-Analytics-&-Insights-Dashboard.md
+    - '11. Security & Compliance': 11-Security-&-Compliance.md
+    - '12. Backups & Disaster Recovery': 12-Backups-&-Disaster-Recovery.md
+    - '13. Release & Change Control': 13-Release-&-Change-Control.md
+    - '14. Troubleshooting Playbook': 14-Troubleshooting-Playbook.md
+    - '15. Checklists and Templates': 15-Checklists-and-Templates.md
+  - 'Resources':
+    - 'Glossary': appendix-B-Glossary.md
